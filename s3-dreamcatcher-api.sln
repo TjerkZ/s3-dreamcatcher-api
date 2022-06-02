@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s3-dreamcatcher-api", "s3-dreamcatcher-api\s3-dreamcatcher-api.csproj", "{2A5D2869-90D7-4B30-9838-66C004BDFFB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "s3-dreamcatcher-api", "s3-dreamcatcher-api\s3-dreamcatcher-api.csproj", "{2A5D2869-90D7-4B30-9838-66C004BDFFB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "s3-dreamcatcher-api.logic", "s3-dreamcatcher-api.logic\s3-dreamcatcher-api.logic.csproj", "{9BE655F2-2C41-403F-9A78-9B35AD746BE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "s3-dreamcatcher-api.dal", "s3-dreamcatcher-api.dal\s3-dreamcatcher-api.dal.csproj", "{526E075A-96FE-4526-B322-7501D8270DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s3-dreamcatcher-api.dto", "s3-dreamcatcher-api.dto\s3-dreamcatcher-api.dto.csproj", "{88782977-3DCD-42EB-A8A5-F18C64604413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "s3-dreamcatcher-api.abstraction", "s3-dreamcatcher-api.abstraction\s3-dreamcatcher-api.abstraction.csproj", "{897353F4-1F51-4271-9BF4-9A0CC504D4EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{2A5D2869-90D7-4B30-9838-66C004BDFFB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A5D2869-90D7-4B30-9838-66C004BDFFB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A5D2869-90D7-4B30-9838-66C004BDFFB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE655F2-2C41-403F-9A78-9B35AD746BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE655F2-2C41-403F-9A78-9B35AD746BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE655F2-2C41-403F-9A78-9B35AD746BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE655F2-2C41-403F-9A78-9B35AD746BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526E075A-96FE-4526-B322-7501D8270DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526E075A-96FE-4526-B322-7501D8270DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526E075A-96FE-4526-B322-7501D8270DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526E075A-96FE-4526-B322-7501D8270DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88782977-3DCD-42EB-A8A5-F18C64604413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88782977-3DCD-42EB-A8A5-F18C64604413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88782977-3DCD-42EB-A8A5-F18C64604413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88782977-3DCD-42EB-A8A5-F18C64604413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897353F4-1F51-4271-9BF4-9A0CC504D4EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897353F4-1F51-4271-9BF4-9A0CC504D4EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897353F4-1F51-4271-9BF4-9A0CC504D4EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897353F4-1F51-4271-9BF4-9A0CC504D4EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

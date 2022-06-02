@@ -1,8 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using s3_dreamcatcher_api.dal;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<DreamContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("UserContext"));
+});
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
