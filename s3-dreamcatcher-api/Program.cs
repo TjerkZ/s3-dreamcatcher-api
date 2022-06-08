@@ -9,8 +9,11 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<DreamContext>(opt =>
 {
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("UserContext"));
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DreamContext"));
 });
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

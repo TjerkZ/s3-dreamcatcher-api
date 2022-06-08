@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace s3_dreamcatcher_api.dto
+namespace s3_dreamcatcher_api.dal.DB_Models
 {
-    public class TagsDTO
+    public class Tag
     {
-        public int TagID { get; set; }
+        public int ID { get; set; }
         public string TagName { get; set; } = string.Empty;
+        public ICollection<Dream>? Dreams { get; set; }
     }
 }
