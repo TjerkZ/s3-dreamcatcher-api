@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\s3-dreamcatcher-api.abstraction\s3-dreamcatcher-api.abstraction.csproj" />
     <ProjectReference Include="..\s3-dreamcatcher-api.dto\s3-dreamcatcher-api.dto.csproj" />
   </ItemGroup>
 

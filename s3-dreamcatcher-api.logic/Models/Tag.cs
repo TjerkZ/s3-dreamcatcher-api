@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace s3_dreamcatcher_api.dal.DB_Models
+namespace s3_dreamcatcher_api.logic.Models
 {
     public class Tag
     {

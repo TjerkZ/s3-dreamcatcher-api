@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using s3_dreamcatcher_api.dal.DB_Models;
+﻿using Microsoft.EntityFrameworkCore;
+using s3_dreamcatcher_api.dto;
 
 namespace s3_dreamcatcher_api.dal
 {
@@ -15,7 +10,7 @@ namespace s3_dreamcatcher_api.dal
 
         }
 
-        public DbSet<Dream>? Dreams { get; set; }
-        public DbSet<Tag>? Tags { get; set; }
+        public DbSet<DreamDTO>? Dreams { get; set; }
+        public DbSet<TagDTO>? Tags { get; set; }
     }
 }

@@ -1,15 +1,10 @@
 ﻿using AutoMapper;
-using s3_dreamcatcher_api.dal.DB_Models;
 using s3_dreamcatcher_api.dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using s3_dreamcatcher_api.abstraction;
 
 namespace s3_dreamcatcher_api.dal
 {
-    public class DreamDal
+    public class DreamDal : IDreamDal
     {
         private readonly DreamContext _context;
         public DreamDal(DreamContext dreamContext)
@@ -17,9 +12,9 @@ namespace s3_dreamcatcher_api.dal
             _context = dreamContext;
         }
 
-        public List<Dream> Getalldreams(string userid)
+        public List<DreamDTO> GetAllDreams(string userid)
         {
-            List<Dream> dreams;
+            List<DreamDTO> dreams;
             if (_context.Dreams is not null)
             {
                 dreams = _context.Dreams.Where(dream => dream.UserID == userid).ToList();
@@ -31,10 +26,10 @@ namespace s3_dreamcatcher_api.dal
             return dreams;
         }
 
-        public Dream GetDream(int dreamId)
+        public DreamDTO GetDream(int dreamId)
         {
-            Dream? dream;
-            if (_context.Dreams is not null)
+            DreamDTO? dream;
+            if (_context.Dreams != null)
             {
                 dream = _context.Dreams.FirstOrDefault(dream => dream.ID == dreamId);
             }
@@ -52,10 +47,10 @@ namespace s3_dreamcatcher_api.dal
 
         public int AddDream(DreamDTO dreamDTO)
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<DreamDTO, Dream>());
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<DreamDTO, DreamDTO>());
             var mapper = config.CreateMapper();
 
-            Dream dream = mapper.Map<Dream>(dreamDTO);
+            DreamDTO dream = mapper.Map<DreamDTO>(dreamDTO);
             return 1;
         }
     }

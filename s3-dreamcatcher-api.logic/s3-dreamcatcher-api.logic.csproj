@@ -12,4 +12,8 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\s3-dreamcatcher-api.abstraction\s3-dreamcatcher-api.abstraction.csproj" />
+  </ItemGroup>
+
 </Project>
