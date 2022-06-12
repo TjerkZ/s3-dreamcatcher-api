@@ -8,7 +8,7 @@ namespace s3_dreamcatcher_api.AutoMapperProfiles
     {
         public DreamViewAutoMapperProfile()
         {
-            CreateMap<Dream, DreamViewModel>();
+            CreateMap<Dream, DreamViewModel>().ReverseMap();
         }
     }
 }

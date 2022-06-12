@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using s3_dreamcatcher_api.dal;
+using s3_dreamcatcher_api.abstraction;
+using s3_dreamcatcher_api.logic.Managers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ builder.Services.AddDbContext<DreamContext>(opt =>
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IDreamDal, DreamDal>();
+builder.Services.AddScoped<DreamManager, DreamManager>();
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

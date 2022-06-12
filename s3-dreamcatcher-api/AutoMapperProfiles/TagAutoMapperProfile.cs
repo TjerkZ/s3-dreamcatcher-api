@@ -8,7 +8,7 @@ namespace s3_dreamcatcher_api.AutoMapperProfiles
     {
         public TagAutoMapperProfile()
         {
-            CreateMap<TagDTO, Tag>();
+            CreateMap<TagDTO, Tag>().ReverseMap();
         }
     }
 }

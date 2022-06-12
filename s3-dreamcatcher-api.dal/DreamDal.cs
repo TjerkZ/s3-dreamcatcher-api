@@ -47,11 +47,9 @@ namespace s3_dreamcatcher_api.dal
 
         public int AddDream(DreamDTO dreamDTO)
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<DreamDTO, DreamDTO>());
-            var mapper = config.CreateMapper();
-
-            DreamDTO dream = mapper.Map<DreamDTO>(dreamDTO);
-            return 1;
+            _context.Dreams?.Add(dreamDTO);
+            _context.SaveChanges();
+            return dreamDTO.ID;
         }
     }
 }
