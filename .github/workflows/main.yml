@@ -74,5 +74,5 @@ jobs:
           context: ./s3-dreamcatcher-api/
           file: ./s3-dreamcatcher-api/s3-dreamcatcher-api/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: user/app:latest
           labels: ${{ steps.meta.outputs.labels }}
