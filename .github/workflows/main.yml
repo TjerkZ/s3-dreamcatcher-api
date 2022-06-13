@@ -43,5 +43,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: ./s3-dreamcatcher-api/
+          file: ./s3-dreamcatcher-api/Dockerfile
           push: true
           tags: user/app:latest
