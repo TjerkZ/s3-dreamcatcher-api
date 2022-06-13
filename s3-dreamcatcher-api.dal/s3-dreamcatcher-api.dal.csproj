@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <RootNamespace>s3_dreamcatcher_api.dal</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>s3_dreamcatcher_api</RootNamespace>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,14 +20,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\s3-dreamcatcher-api.abstraction\s3-dreamcatcher-api.abstraction.csproj" />
-    <ProjectReference Include="..\s3-dreamcatcher-api.dal\s3-dreamcatcher-api.dal.csproj" />
     <ProjectReference Include="..\s3-dreamcatcher-api.dto\s3-dreamcatcher-api.dto.csproj" />
-    <ProjectReference Include="..\s3-dreamcatcher-api.logic\s3-dreamcatcher-api.logic.csproj" />
   </ItemGroup>
 
 </Project>
