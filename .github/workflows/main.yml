@@ -73,5 +73,5 @@ jobs:
         with:
           file: ./s3-dreamcatcher-api/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: user/app:latest
+          tags: tjerkzeilstra/s3-dreamcatcher-api:latest
           labels: ${{ steps.meta.outputs.labels }}
